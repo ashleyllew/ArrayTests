@@ -214,10 +214,12 @@ public class ArrayWkst {
 //Return an array that includes the element at the start index, and excludes
 //the element in the end position
   public static int[] subarray(int[] a, int start, int end) {
-	  int [] newArray = new int [1];
-	  newArray[0] = a[start];
+	  int [] newArray = new int [a.length-1];
+	  
+	  for (int i = 0; i < a.length; i++) {
+		  newArray[i] = a[i];
+	  }
 	  return newArray;
-	  // is that what this is asking for ????
   }
 
 //Return the original array without the element n
